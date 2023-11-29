@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 04 JS Crash Course InnerHtml and OutterHtml</title>
+</head>
+<body>
+    <center>
+        <h1>InnerHtml and OuterHtml</h1>
+    </center>
+
+    <div class="js-container">adkfkagfuequgfquio</div>
+
+
+</body>
+</html>
+
+<script type="text/javascript">
+    var item  = document.body.querySelector('.js-container');
+    var newItem = document.createElement("div");
+    newItem.id = "newID";
+    newItem.style = "height:100px; width:100px; background-color:red; margin:4px";
+    var myClone = newItem.cloneNode(true);
+    newItem.innerHTML = "Hi there";
+    myClone.innerHTML = "Hi Clone";
+    item.appendChild(newItem); 
+    item.appendChild(myClone); 
+
+    // console.log(item);
+</script>

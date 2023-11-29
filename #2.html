@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 01 JS Crash Course Selecting Elements and Using Variables</title>
+</head>
+<body>
+    <center>
+        <h1>Selecting Elements and Using Variables</h1>
+    </center>
+
+    <input type="text" class="myClass js-input" id="js-input">
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+    // variable declaration
+
+    var a = "This is a good ";
+
+    // by id
+    var b = document.getElementById('js-input');
+    console.log(b);
+
+    // by tag name
+    var c = document.querySelectorAll('input');
+    console.log(c);
+
+    // by query selector
+    var c = document.querySelector('#js-input');
+    console.log(c);
+</script>

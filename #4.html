@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 04 JS Crash Course Changing Elements Attribute</title>
+</head>
+<body>
+    <center>
+        <h1>Changing Elements Attribute</h1>
+    </center>
+
+    <input type="text" class="js-input">
+
+</body>
+</html>
+
+<script type="text/javascript">
+    var a = document.querySelector(".js-input");
+    a.value = "Click Me!";
+    a.type = "button";
+    a.width = "100%";
+    a.style.backgroundColor = "red";
+    a.style.color = "white";
+</script>

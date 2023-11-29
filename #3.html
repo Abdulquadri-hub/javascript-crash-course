@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 03 JS Crash Course Loops</title>
+</head>
+<body>
+    <center>
+        <h1>Loops</h1>
+        <p>This simply means repeated actions</p>
+    </center>
+
+
+
+    <input type="text" class="js-input" id="js-input">
+    <input type="text" class="js-input" id="js-input1">
+
+    <div></div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    var a = document.querySelectorAll('input');
+    // console.log(a);
+
+    var div = document.querySelector('div');
+    div.innerHTML = "";
+
+
+    for (let i = 0; i < a.length; i++) {
+
+        console.log(a[i]);
+
+        div.innerHTML += "<select><option>Select Your Item</option></select>";
+    }
+</script>
